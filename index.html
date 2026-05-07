@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quan Qin academic homepage with publications and co-authors.">
+    <title>Quan Qin | Academic Homepage</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#publications">Skip to publications</a>
+
+    <div class="page">
+      <header class="profile-hero" aria-labelledby="profile-name">
+        <div class="hero-photo" aria-hidden="true">
+          <img id="profile-photo" alt="" decoding="async">
+          <span id="profile-photo-fallback" class="avatar-fallback">QQ</span>
+        </div>
+
+        <div class="hero-copy">
+          <!-- Edit long-form personal profile copy here if you add one later. Scholar metadata is loaded from publications.json. -->
+          <p class="eyebrow">Academic Profile</p>
+          <h1 id="profile-name">Quan Qin</h1>
+          <p id="profile-email" class="profile-email"><a href="mailto:qinquan@whu.edu.cn">qinquan@whu.edu.cn</a></p>
+          <a id="profile-scholar-link" class="text-link" href="https://scholar.google.com/citations?user=v_yErA4AAAAJ&hl=en" rel="noopener" target="_blank">Google Scholar profile</a>
+        </div>
+      </header>
+
+      <main class="layout">
+        <aside class="sidebar" aria-label="Profile details">
+          <section class="panel interests-panel" aria-labelledby="interests-heading">
+            <h2 id="interests-heading">Research Interests</h2>
+            <!-- Edit profile.interests in publications.json to add tags. Empty arrays intentionally render no tags. -->
+            <div id="interest-tags" class="tag-list" aria-label="Research interest tags"></div>
+          </section>
+
+          <section class="panel coauthors-panel" aria-labelledby="coauthors-heading">
+            <div class="section-heading">
+              <h2 id="coauthors-heading">Co-authors</h2>
+            </div>
+            <div id="coauthors-list" class="coauthor-list"></div>
+          </section>
+        </aside>
+
+        <section id="publications" class="content-panel" aria-labelledby="publications-heading">
+          <div class="section-heading publications-heading">
+            <div>
+              <p class="eyebrow">Selected Work</p>
+              <h2 id="publications-heading">Publications</h2>
+            </div>
+            <p id="last-updated" class="last-updated"></p>
+          </div>
+
+          <!-- Edit papers in publications.json. The sync script preserves manually added externalUrl values. -->
+          <ol id="publication-list" class="publication-list"></ol>
+          <p id="data-status" class="data-status" role="status"></p>
+        </section>
+      </main>
+    </div>
+
+    <noscript>
+      <p class="noscript">This static page needs JavaScript enabled to render publication metadata from publications.json.</p>
+    </noscript>
+
+    <script src="script.js"></script>
+  </body>
+</html>
