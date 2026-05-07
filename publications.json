@@ -1,5 +1,5 @@
 {
-  "_comment": "Edit profile.email and profile.interests to update displayed profile details. Edit publications[].externalUrl to add DOI, arXiv, publisher, or project links. The Scholar sync preserves email, interests, and externalUrl values.",
+  "_comment": "Edit profile.email and profile.interests to update displayed profile details. Publication metadata is synced from ORCID; DOI values are written to publications[].externalUrl.",
   "profile": {
     "name": "Quan Qin",
     "email": "qinquan@whu.edu.cn",
@@ -7,72 +7,90 @@
     "verifiedEmail": "",
     "photoUrl": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=v_yErA4AAAAJ&citpid=3",
     "scholarUrl": "https://scholar.google.com/citations?user=v_yErA4AAAAJ&hl=en",
+    "orcidUrl": "https://orcid.org/0000-0002-7540-4371",
     "interests": [],
-    "lastSyncedAt": "2026-05-07T00:00:00.000Z"
+    "lastSyncedAt": "2026-05-07T21:23:48.912Z"
   },
   "publications": [
     {
-      "scholarId": "v_yErA4AAAAJ:W7OEmFMy1HYC",
+      "sourceId": "orcid:212150256",
+      "orcidPutCode": 212150256,
       "title": "Cross-city traffic noise modeling and inequality analysis via AlphaEarth Geospatial Foundation Models",
-      "authors": "Y Zhang, Q Qin, H Nie, MP Kwan, S He, E Ke",
-      "venue": "Transportation Research Part D: Transport and Environment 156, 105378",
+      "authors": "Y Zhang, Q Qin, H Nie, M Kwan, S He, E Ke",
+      "venue": "Transportation Research Part D: Transport and Environment",
       "year": 2026,
-      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v_yErA4AAAAJ&citation_for_view=v_yErA4AAAAJ:W7OEmFMy1HYC",
-      "externalUrl": ""
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.1016/j.trd.2026.105378"
     },
     {
-      "scholarId": "v_yErA4AAAAJ:Tyk-4Ss8FVUC",
+      "sourceId": "orcid:208103795",
+      "orcidPutCode": 208103795,
       "title": "Deep learning for tropospheric prediction: an integration of knowledge and data-driven approaches",
       "authors": "X Lei, J Guo, T Yang, J Tao, Q Qin, J Zhang, Q Zhao",
-      "venue": "GPS Solutions 30 (2), 85",
+      "venue": "GPS Solutions",
       "year": 2026,
-      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v_yErA4AAAAJ&citation_for_view=v_yErA4AAAAJ:Tyk-4Ss8FVUC",
-      "externalUrl": ""
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.1007/s10291-026-02025-9"
     },
     {
-      "scholarId": "v_yErA4AAAAJ:zYLM7Y9cAGgC",
-      "title": "Urban region representation learning via dual spatial contrasts",
-      "authors": "Q Qin, T Ai, W Huang, S Xu, M Du, S Li",
-      "venue": "International Journal of Geographical Information Science, 1-27",
-      "year": 2025,
-      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v_yErA4AAAAJ&citation_for_view=v_yErA4AAAAJ:zYLM7Y9cAGgC",
-      "externalUrl": ""
-    },
-    {
-      "scholarId": "v_yErA4AAAAJ:UeHWp8X0CEIC",
-      "title": "Beyond AlphaEarth: toward human-centered spatial representation via POI-guided contrastive learning",
+      "sourceId": "orcid:194199879",
+      "orcidPutCode": 194199879,
+      "title": "Beyond AlphaEarth: Toward Human-Centered Spatial Representation via POI-Guided Contrastive Learning",
       "authors": "J Liu, Q Qin, G Dong, X Wang, J Feng, Z Zeng, T Cheng",
       "venue": "arXiv preprint arXiv:2510.09894",
       "year": 2025,
-      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v_yErA4AAAAJ&citation_for_view=v_yErA4AAAAJ:UeHWp8X0CEIC",
-      "externalUrl": "https://arxiv.org/abs/2510.09894"
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.48550/ARXIV.2510.09894"
     },
     {
-      "scholarId": "v_yErA4AAAAJ:2osOgNQ5qMEC",
+      "sourceId": "orcid:186384352",
+      "orcidPutCode": 186384352,
       "title": "Learning dual context aware POI representations for geographic mapping",
       "authors": "Q Qin, T Ai, S Xu, Y Zhang, W Huang, M Du, S Li",
-      "venue": "International Journal of Applied Earth Observation and Geoinformation 142, 104683",
+      "venue": "International Journal of Applied Earth Observation and Geoinformation",
       "year": 2025,
-      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v_yErA4AAAAJ&citation_for_view=v_yErA4AAAAJ:2osOgNQ5qMEC",
-      "externalUrl": ""
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.1016/j.jag.2025.104683"
     },
     {
-      "scholarId": "v_yErA4AAAAJ:d1gkVwhDpl0C",
+      "sourceId": "orcid:191511237",
+      "orcidPutCode": 191511237,
+      "title": "Learning street representation by aligning visual features from street-view and satellite imagery",
+      "authors": "Q Qin, T Ai, L Yan, Z Zhang",
+      "venue": "Thirteenth International Conference on Geographic Information Science (GIScience 2025)",
+      "year": 2025,
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.5281/ZENODO.16930485"
+    },
+    {
+      "sourceId": "orcid:196860752",
+      "orcidPutCode": 196860752,
+      "title": "Urban region representation learning via dual spatial contrasts",
+      "authors": "Q Qin, T Ai, W Huang, S Xu, M Du, S Li",
+      "venue": "International Journal of Geographical Information Science",
+      "year": 2025,
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.1080/13658816.2025.2585320"
+    },
+    {
+      "sourceId": "orcid:125557289",
+      "orcidPutCode": 125557289,
       "title": "Identifying urban functional zones by capturing multi-spatial distribution patterns of points of interest",
       "authors": "Q Qin, S Xu, M Du, S Li",
-      "venue": "International Journal of Digital Earth 15 (1), 2468-2494",
+      "venue": "International Journal of Digital Earth",
       "year": 2022,
-      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v_yErA4AAAAJ&citation_for_view=v_yErA4AAAAJ:d1gkVwhDpl0C",
-      "externalUrl": ""
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.1080/17538947.2022.2160841"
     },
     {
-      "scholarId": "v_yErA4AAAAJ:u-x6o8ySG0sC",
+      "sourceId": "orcid:155030120",
+      "orcidPutCode": 155030120,
       "title": "Urban functional zone identification by considering the heterogeneous distribution of points of interests",
       "authors": "Q Qin, S Xu, M Du, S Li",
       "venue": "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences",
       "year": 2022,
-      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v_yErA4AAAAJ&citation_for_view=v_yErA4AAAAJ:u-x6o8ySG0sC",
-      "externalUrl": ""
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.5194/isprs-annals-v-4-2022-83-2022"
     }
   ],
   "coauthors": [

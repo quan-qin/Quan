@@ -1,4 +1,4 @@
-name: Sync Google Scholar metadata
+name: Sync ORCID publication metadata
 
 on:
   schedule:
@@ -21,17 +21,17 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Sync public Scholar metadata
-        run: node scripts/sync-scholar.js
+      - name: Sync public ORCID publication metadata
+        run: node scripts/sync-orcid.js
 
       - name: Commit updated metadata
         run: |
           if git diff --quiet -- publications.json script.js; then
-            echo "No Scholar metadata changes."
+            echo "No ORCID publication metadata changes."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add publications.json script.js
-            git commit -m "Update Scholar metadata"
+            git commit -m "Update ORCID publication metadata"
             git push
           fi

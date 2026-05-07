@@ -2,9 +2,9 @@
   "name": "personal-academic-homepage",
   "version": "1.0.0",
   "private": true,
-  "description": "Static academic homepage with low-frequency Google Scholar metadata sync.",
+  "description": "Static academic homepage with low-frequency ORCID publication metadata sync.",
   "scripts": {
-    "sync:scholar": "node scripts/sync-scholar.js"
+    "sync:orcid": "node scripts/sync-orcid.js"
   },
   "license": "UNLICENSED"
 }
