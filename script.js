@@ -14,9 +14,19 @@ const FALLBACK_DATA = /* ACADEMIC_DATA_START */
     "scholarUrl": "https://scholar.google.com/citations?user=v_yErA4AAAAJ&hl=en",
     "orcidUrl": "https://orcid.org/0000-0002-7540-4371",
     "interests": [],
-    "lastSyncedAt": "2026-05-07T21:23:48.912Z"
+    "lastSyncedAt": "2026-05-29T22:24:17.043Z"
   },
   "publications": [
+    {
+      "sourceId": "orcid:216168395",
+      "orcidPutCode": 216168395,
+      "title": "CITYREP: A Unified Benchmark for Urban Representations Across Cities, Tasks, and Modalities",
+      "authors": "J Liu, X Wang, Z Zeng, J Feng, Q Qin, I Ilyankou, G Dong, T Cheng",
+      "venue": "",
+      "year": 2026,
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.48550/ARXIV.2605.26036"
+    },
     {
       "sourceId": "orcid:212150256",
       "orcidPutCode": 212150256,
