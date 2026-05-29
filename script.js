@@ -203,7 +203,7 @@ function renderAcademicPage(data) {
   renderInterests((data.profile && data.profile.interests) || []);
   renderCoauthors(data.coauthors || []);
   renderPublications(data.publications || []);
-  renderLastUpdated(data.profile && data.profile.lastSyncedAt);
+  renderLastUpdated(data.profile || {});
 }
 
 function renderProfile(profile) {
@@ -352,22 +352,23 @@ function renderPublications(publications) {
   });
 }
 
-function renderLastUpdated(lastSyncedAt) {
+function renderLastUpdated(profile) {
   const target = document.getElementById("last-updated");
-  if (!target || !lastSyncedAt) {
+  if (!target || !profile.lastSyncedAt) {
     return;
   }
 
-  const date = new Date(lastSyncedAt);
+  const date = new Date(profile.lastSyncedAt);
   if (Number.isNaN(date.getTime())) {
     return;
   }
 
-  target.textContent = `Last synced ${date.toLocaleDateString("en", {
+  const dateText = date.toLocaleDateString("en", {
     year: "numeric",
     month: "short",
     day: "numeric"
-  })}`;
+  });
+  target.textContent = `Last synced from ORCID on ${dateText}`;
 }
 
 function setText(id, value) {

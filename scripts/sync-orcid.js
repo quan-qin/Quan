@@ -25,10 +25,7 @@ async function main() {
   const scraped = await scrapeOrcidWorks(works, existing);
   validateData(scraped);
 
-  const candidate = withStableTimestamp(scraped, existing);
-  const finalData = hasDataChanged(existing, candidate)
-    ? withTimestamp(candidate, new Date().toISOString())
-    : candidate;
+  const finalData = withTimestamp(scraped, new Date().toISOString());
 
   const nextJson = `${JSON.stringify(finalData, null, 2)}\n`;
   const nextScript = buildNextScript(finalData);
@@ -257,16 +254,6 @@ function validateData(data) {
   }
 }
 
-function withStableTimestamp(data, existing) {
-  return {
-    ...data,
-    profile: {
-      ...data.profile,
-      lastSyncedAt: existing.profile && existing.profile.lastSyncedAt ? existing.profile.lastSyncedAt : null
-    }
-  };
-}
-
 function withTimestamp(data, timestamp) {
   return {
     ...data,
@@ -275,18 +262,6 @@ function withTimestamp(data, timestamp) {
       lastSyncedAt: timestamp
     }
   };
-}
-
-function hasDataChanged(existing, candidate) {
-  return JSON.stringify(comparable(existing)) !== JSON.stringify(comparable(candidate));
-}
-
-function comparable(data) {
-  const clone = JSON.parse(JSON.stringify(data || {}));
-  if (clone.profile) {
-    delete clone.profile.lastSyncedAt;
-  }
-  return clone;
 }
 
 function buildNextScript(data) {

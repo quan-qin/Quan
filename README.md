@@ -34,6 +34,8 @@ node scripts/sync-orcid.js
 
 The sync script reads public ORCID works metadata from `0000-0002-7540-4371` and updates `publications.json` plus the fallback data in `script.js`. Paper title links are DOI URLs from ORCID when DOI metadata is available.
 
+`profile.lastSyncedAt` is refreshed after every successful ORCID sync run, so the date shown in the Publications heading updates with the weekly workflow even when the publication list itself has not changed.
+
 If the ORCID request fails or parsing produces no publications, the script exits without overwriting existing data.
 
 ## Excluded content
