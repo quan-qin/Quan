@@ -14,7 +14,7 @@ const FALLBACK_DATA = /* ACADEMIC_DATA_START */
     "scholarUrl": "https://scholar.google.com/citations?user=v_yErA4AAAAJ&hl=en",
     "orcidUrl": "https://orcid.org/0000-0002-7540-4371",
     "interests": [],
-    "lastSyncedAt": "2026-06-15T11:54:06.325Z"
+    "lastSyncedAt": "2026-06-22T11:43:45.488Z"
   },
   "publications": [
     {
@@ -48,6 +48,16 @@ const FALLBACK_DATA = /* ACADEMIC_DATA_START */
       "externalUrl": "https://doi.org/10.1007/s10291-026-02025-9"
     },
     {
+      "sourceId": "orcid:196860752",
+      "orcidPutCode": 196860752,
+      "title": "Urban region representation learning via dual spatial contrasts",
+      "authors": "Q Qin, T Ai, W Huang, S Xu, M Du, S Li",
+      "venue": "International Journal of Geographical Information Science",
+      "year": 2026,
+      "scholarUrl": "",
+      "externalUrl": "https://doi.org/10.1080/13658816.2025.2585320"
+    },
+    {
       "sourceId": "orcid:194199879",
       "orcidPutCode": 194199879,
       "title": "Beyond AlphaEarth: Toward Human-Centered Spatial Representation via POI-Guided Contrastive Learning",
@@ -76,16 +86,6 @@ const FALLBACK_DATA = /* ACADEMIC_DATA_START */
       "year": 2025,
       "scholarUrl": "",
       "externalUrl": "https://doi.org/10.5281/ZENODO.16930485"
-    },
-    {
-      "sourceId": "orcid:196860752",
-      "orcidPutCode": 196860752,
-      "title": "Urban region representation learning via dual spatial contrasts",
-      "authors": "Q Qin, T Ai, W Huang, S Xu, M Du, S Li",
-      "venue": "International Journal of Geographical Information Science",
-      "year": 2025,
-      "scholarUrl": "",
-      "externalUrl": "https://doi.org/10.1080/13658816.2025.2585320"
     },
     {
       "sourceId": "orcid:125557289",
