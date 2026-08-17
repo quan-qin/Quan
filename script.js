@@ -14,7 +14,7 @@ const FALLBACK_DATA = /* ACADEMIC_DATA_START */
     "scholarUrl": "https://scholar.google.com/citations?user=v_yErA4AAAAJ&hl=en",
     "orcidUrl": "https://orcid.org/0000-0002-7540-4371",
     "interests": [],
-    "lastSyncedAt": "2026-08-10T07:20:26.644Z"
+    "lastSyncedAt": "2026-08-17T06:41:46.237Z"
   },
   "publications": [
     {
